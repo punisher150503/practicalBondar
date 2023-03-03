@@ -7,7 +7,7 @@ do {
 } while (language !== "ua" && language !== "en");
 let dayNumber;
 do {
-    dayNumber = prompt(language === "ua" ? "Введіть номер дня неділі від 1 до 7?" : "Enter the day number of the week (from 1 to 7)?");
+    dayNumber = parseInt(prompt(language === "ua" ? "Введіть номер дня неділі від 1 до 7?" : "Enter the day number of the week (from 1 to 7)?"));
     if (dayNumber < 1 || dayNumber > 7 || isNaN(dayNumber)) {
         alert("Неправильне значення. Спробуйте ще раз.");
     }
